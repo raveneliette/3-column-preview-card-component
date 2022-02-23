@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* 
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+font-weight: 400, 700
+*/
+
+:root {
+    --primary-color: hsl(31, 77%, 52%); /* Bright orange */
+    --secondary-color: hsl(184, 100%, 22%); /* Dark cyan */
+    --dark-color: hsl(179, 100%, 13%); /* very dark cyan */
+    --light-color: hsl(0, 0%, 95%); /* very light gray */
+    --light-color-two: hsla(0, 0%, 100%, 0.68); /* transparent white */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+}
+
+/* Base Styles */
+body {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+h2 {
+    color: var(--light-color);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 1.9rem 0 1.6rem 0;
+}
+
+p {
+    color: var(--light-color-two);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.933rem;
+    letter-spacing: 0.033rem;
+    line-height: 1.6rem;
+    margin-bottom: 5rem;
+}
+
+.main-container {
+    width: 920px;
+    border-radius: 0.533rem;
+    box-shadow: 0 0.667rem 1.333rem -0.4rem #757575;
+}
+
+.main-container a {
+    background-color: var(--light-color);
+    padding: 0.9rem 2rem;
+    border: 0.133rem solid transparent;
+    border-radius: 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    box-shadow: 0 0.333rem 0.533rem -0.4rem #424242;
+}
+
+.main-container a:hover {
+    background-color: transparent;
+    border: 0.133rem solid var(--light-color);
+    color: var(--light-color);
+    transition: all 0.3s ease-in-out 0.2s;
+}
+
+/* Sedan */
+.sedan-section {
+    background-color: var(--primary-color);
+    border-radius: 0.533rem 0 0 0.533rem;
+    padding: 3.2rem;
+}
+
+.sedan-section a {
+    color: var(--primary-color);
+}
+
+.sedan-section a:active {
+    color: var(--primary-color);
+    background-color: var(--light-color);
+    transition: all 0.1s ease-in-out;
+    transform: scale(0.95);
+}
+
+/* SUV */
+.suv-section {
+    background-color: var(--secondary-color);
+    padding: 3.2rem;
+}
+
+.suv-section a {
+    color: var(--secondary-color);
+}
+
+.suv-section a:active {
+    color: var(--secondary-color);
+    background-color: var(--light-color);
+    transition: all 0.1s ease-in-out;
+    transform: scale(0.95);
+}
+
+/* Luxury */
+.luxury-section {
+    background-color: var(--dark-color);
+    border-radius: 0 0.533rem 0.533rem 0;
+    padding: 3.2rem;
+}
+
+.luxury-section a {
+    color: var(--dark-color);
+}
+
+.luxury-section a:active {
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    transition: all 0.1s ease-in-out;
+    transform: scale(0.95);
+}
+
+/* Media Queries */
+/* Tablets and under */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+    }
+
+    p {
+        margin-bottom: 1.5rem;
+    }
+
+    .main-container {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+        width: 570px;
+        margin: 2.667rem 0;
+    }
+
+    .sedan-section {
+        border-radius: 0.533rem 0.533rem 0 0;
+    }
+
+    .luxury-section {
+        border-radius: 0 0 0.533rem 0.533rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    p {
+        font-size: 1.067rem;
+        padding-right: 0.667rem;
+    }
+
+    .main-container {
+        width: 375px;
+        margin: 6.667rem 0;
+    }
+}
