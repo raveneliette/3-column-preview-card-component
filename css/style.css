@@ -26,6 +26,7 @@ html {
 
 /* Base Styles */
 body {
+    background-color: var(--light-color);
     display: grid;
     height: 100vh;
     place-items: center;
