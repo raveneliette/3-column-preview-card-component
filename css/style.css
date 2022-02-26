@@ -55,7 +55,7 @@ p {
 }
 
 .main-container {
-    width: 920px;
+    max-width: 920px;
     border-radius: 0.533rem;
     box-shadow: 0 0.667rem 1.333rem -0.4rem #757575;
 }
