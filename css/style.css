@@ -91,17 +91,17 @@ p {
 }
 
 /* Sedan */
-.sedan-section {
+.sedan-container {
     background-color: var(--primary-color);
     border-radius: 0.533rem 0 0 0.533rem;
     padding: 3.2rem;
 }
 
-.sedan-section a {
+.sedan-container a {
     color: var(--primary-color);
 }
 
-.sedan-section a:active {
+.sedan-container a:active {
     color: var(--primary-color);
     background-color: var(--light-color);
     transition: all 0.1s ease-in-out;
@@ -109,16 +109,16 @@ p {
 }
 
 /* SUV */
-.suv-section {
+.suv-container {
     background-color: var(--secondary-color);
     padding: 3.2rem;
 }
 
-.suv-section a {
+.suv-container a {
     color: var(--secondary-color);
 }
 
-.suv-section a:active {
+.suv-container a:active {
     color: var(--secondary-color);
     background-color: var(--light-color);
     transition: all 0.1s ease-in-out;
@@ -126,17 +126,17 @@ p {
 }
 
 /* Luxury */
-.luxury-section {
+.luxury-container {
     background-color: var(--dark-color);
     border-radius: 0 0.533rem 0.533rem 0;
     padding: 3.2rem;
 }
 
-.luxury-section a {
+.luxury-container a {
     color: var(--dark-color);
 }
 
-.luxury-section a:active {
+.luxury-container a:active {
     color: var(--dark-color);
     background-color: var(--light-color);
     transition: all 0.1s ease-in-out;
@@ -161,11 +161,11 @@ p {
         margin: 2.667rem 0;
     }
 
-    .sedan-section {
+    .sedan-container {
         border-radius: 0.533rem 0.533rem 0 0;
     }
 
-    .luxury-section {
+    .luxury-container {
         border-radius: 0 0 0.533rem 0.533rem;
     }
 }
