@@ -28,7 +28,7 @@ html {
 body {
     background-color: var(--light-color);
     display: grid;
-    height: 100vh;
+    min-height: 100vh;
     place-items: center;
 }
 
